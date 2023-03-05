@@ -1,0 +1,133 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+:root{
+  --Softred: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Darkbrown: hsl(25, 47%, 15%);
+  --Mediumbrown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Verypaleorange: hsl(33, 100%, 98%);
+}
+body{
+  font-size: 1.1rem;
+  background-color: var(--Cream);
+  color: var(--Mediumbrown);
+  height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+}
+.main-body{
+  width: 30vw;
+  min-height: 50%;
+  padding: 3rem;
+  background-color: white;
+  margin: auto;
+  border-radius: 1rem;
+}
+.main-body h1{
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+.chart-wrapper{
+  width: 100%;
+  display: flex;
+  align-items:end;
+  /* gap: 1.5rem; */
+  justify-content: space-between;
+}
+.chart{
+  width: 10%;
+  cursor: pointer;
+}
+.day{
+  margin-top: .7rem;
+}
+.center{
+  text-align: center;
+}
+.amount{
+  font-size: 1rem;
+  width: 130%;
+  margin-bottom: .5rem;
+  height: 2rem;
+  padding: .2rem;
+  background-color: rgb(28, 27, 27);
+  color: white;
+  border-radius: .5rem;
+  position: relative;
+  left: -.5rem;
+}
+.hidden{
+  visibility: hidden;
+}
+.block{
+  border-radius: .3rem;
+  background-color: var(--Softred);
+}
+hr{
+  margin-top: 1.5rem;
+}
+.total-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+span{
+  display: block;
+}
+.total{
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+}
+.discount{
+  font-weight: 700;
+  color: black;
+}
+.discount-week{
+  font-weight: 500;
+  color: var(--Mediumbrown);
+}
+.nav{
+  width: 30%;
+  height: 7rem;
+  background-color: var(--Softred);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin: 6rem auto 2rem auto;
+  border-radius: 1rem;
+  align-items: center;
+  color: white;
+}
+.balance{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.green{
+  background-color: var(--Cyan);
+}
+.red{
+  background-color:'hsl(10, 79%, 65%)';
+}
+@media screen and (max-width: 480px){
+  .main-body{
+    width: 90vw;
+    min-height: 50%;
+  }
+  .nav{
+    width: 90%;
+    height: 8rem;
+  }
+}
